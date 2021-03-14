@@ -1,0 +1,35 @@
+- name: Training Da'i Ekonomi Syariah
+  like: 1K
+  people: 500
+  place: Zoom Meet
+  date: 04/04/2021
+  time: 08:00 AM
+  img: assets/img/sample1.jpg
+- name: Kajian International Women's Day
+  like: 1.2K
+  people: 100
+  place: Google Meet
+  date: 13/03/2021
+  time: 19:30 PM
+  img: assets/img/sample2.jpg
+- name: Pembukaan Karya Kreatif Indonesia 2021 "Eksotisme Lombok"
+  like: 5K
+  people: 1K
+  place: karyakreatifindonesia.com
+  date: 03/03/2021
+  time: 08:25 - 10:10 PM
+  img: assets/img/sample3.jpg
+- name: Pelatihan Desain Grafis
+  like: 2K
+  people: 200
+  place: Zoom Meet
+  date: 20/03/2021
+  time: 09:00 AM
+  img: assets/img/sample4.jpg
+- name: Pendidikan Menengah Koperasi Nasional, Koperasi Pemuda Indonesia
+  like: 1K
+  people: 600
+  place: Hotel Royal Kuningan Jakarta, Zoom Meet, Youtube
+  date: 25/02/2021
+  time: 10:00 - 12 AM
+  img: assets/img/sample5.jpg

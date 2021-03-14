@@ -1,0 +1,27 @@
+title: Go Events
+version: Ver.1.0
+copyright: 2021
+email: info.event@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Informasi event-event menarik baik online atau offline
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: info.event
+github_username:  info.event
+
+# Build settings
+markdown: kramdown
+#theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+  
+sass:
+    style: compressed

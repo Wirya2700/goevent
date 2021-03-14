@@ -1,0 +1,62 @@
+---
+layout: default
+menu: home
+---
+
+<!-- App Capsule -->
+<div id="appCapsule">
+
+	<div class="appContent row">
+		{% for event in site.data.events %}
+			<div class="event mt-2 col-sm-12 col-md-6 col-lg-4 col-xl-2">
+				<a href="#" class="card text-white">
+					<img src="{{event.img}}" class="card-img img-fluid" alt="image">
+				</a>
+				<div class="header row">
+					<div class="col-8">
+						<small><i class="icon ion-ios-people event-people"></i> {{event.people}} peserta telah mendaftar</small>
+					</div>
+					<div class="col-4 event-like text-right">
+						<small><i class="icon ion-ios-heart event-like"></i> {{event.like}}</small>
+					</div>
+				</div>
+				<h6 class="title mt-1">{{event.name}}</h6>
+				<div class="header row">
+					<div class="col-12 event-date">
+						<small><i class="icon ion-md-calendar"></i> {{event.date}}, {{event.time}}</small>
+					</div>
+					<div class="col-12 event-place">
+						<small><i class="icon ion-md-map"></i> {{event.place}}</small>
+					</div>
+				</div>
+			<div class="divider mt-2 mb-2"></div>
+			</div>
+		{% endfor %}
+	</div>
+
+	<!-- app Footer -->
+	<footer class="appFooter">
+		<div class="heading">Copyright © {{ site.title }} {{ site.copyright }}</div>
+		<!-- facebook -->
+		<a href="#" class="btn btn-facebook btn-icon mr-1">
+			<i class="icon ion-logo-facebook"></i>
+		</a>
+		<!-- twitter -->
+		<a href="#" class="btn btn-twitter btn-icon mr-1">
+			<i class="icon ion-logo-twitter"></i>
+		</a>
+		<!-- instagram -->
+		<a href="#" class="btn btn-instagram btn-icon mr-1">
+			<i class="icon ion-logo-instagram"></i>
+		</a>
+		<!-- yt -->
+		<a href="#" class="btn btn-youtube btn-icon mr-1">
+			<i class="icon ion-logo-youtube"></i>
+		</a>
+	</footer>
+	<!-- * app Footer -->
+
+
+</div>
+<!-- * appCapsule -->
+

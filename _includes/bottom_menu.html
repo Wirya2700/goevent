@@ -1,0 +1,28 @@
+<!-- App Bottom Menu -->
+<div class="appBottomMenu">
+	<div class="item {% if page.menu != "ticket" or page.menu != "notif"  %} active {%endif%}">
+		<a href="index.html">
+			<p>
+				<i class="icon ion-ios-home"></i>
+				<span>Home</span>
+			</p>
+		</a>
+	</div>
+	<div class="item {% if page.menu == "ticket" %} active {%endif%}">
+		<a href="ticket.html">
+			<p>
+				<i class="icon fas fa-ticket-alt"></i>
+				<span>Tickets</span>
+			</p>
+		</a>
+	</div>
+	<div class="item {% if page.menu == "notif" %} active {%endif%}">
+		<a href="notif.html">
+			<p>
+				<i class="icon ion-ios-notifications"></i>
+				<span>Notifications</span>
+			</p>
+		</a>
+	</div>
+</div>
+<!-- * App Bottom Menu -->
