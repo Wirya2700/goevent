@@ -1,6 +1,6 @@
 <!-- App Bottom Menu -->
 <div class="appBottomMenu">
-	<div class="item {% if page.menu != "ticket" or page.menu != "notif"  %} active {%endif%}">
+	<div class="item {% if page.menu != "ticket" and page.menu != "notif"  %} active {%endif%}">
 		<a href="index.html">
 			<p>
 				<i class="icon ion-ios-home"></i>
@@ -13,6 +13,14 @@
 			<p>
 				<i class="icon fas fa-ticket-alt"></i>
 				<span>Tickets</span>
+			</p>
+		</a>
+	</div>
+	<div class="item {% if page.menu == "ticket" %} active {%endif%}">
+		<a href="ticket.html">
+			<p>
+				<i class="icon fas fa-ticket-alt"></i>
+				<span>EO</span>
 			</p>
 		</a>
 	</div>

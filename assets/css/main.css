@@ -79,9 +79,12 @@ a:focus {
 .appHeader .pageTitle {
 	font-size: 18px;
 	font-weight: 500;
-	color: #1DCC70;
 	text-align: center;
 	line-height: 1em
+}
+
+.appHeader .pageTitle strong {
+	color: #1DCC70!important;
 }
 
 .appHeader .pageTitle .text-muted {

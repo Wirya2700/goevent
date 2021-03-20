@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	{% include head.html %}
+
+	<body>
+		<!-- Page loading -->
+		<div class="loading">
+			<div class="spinner-grow text-success"></div>
+		</div>
+		<!-- * Page loading -->
+		<div class="appHeader">
+			<div class="left">
+				<a href="javascript:;" class="icon goBack">
+					<i class="icon ion-ios-arrow-back"></i>
+				</a>
+			</div>
+			<div class="pageTitle">
+				{% if page.header %}{{ page.header }}{% else %}<strong>{{ site.title }}</strong>{% endif %}
+			</div>
+			<div class="right">
+				<a href="{{page.link-button}}.html" class="link">{{page.button}}</a>
+			</div>
+		</div>
+		{{ content }}
+		
+	</body>
+
+	{% include js_files.html %}
+</html>

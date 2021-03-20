@@ -1,0 +1,84 @@
+---
+layout: default
+menu: home
+header: Profile
+---
+
+<!-- App Capsule -->
+<div id="appCapsule">
+
+	<div class="appContent pt-2">
+
+		<!-- profile detail -->
+		<div class="profileDetail">
+			<div class="profileBox">
+				<div class="image">
+					<img src="assets/img/avatar.jpg" alt="avatar" class="avatar">
+				</div>
+				<div class="info">
+					<strong>Hanny Maria</strong>
+					<div class="text-muted">
+						<i class="icon ion-ios-pin"></i>
+						Serang, Banten
+					</div>
+				</div>
+			</div>
+			<div class="bio">
+				Nama saya Hanny
+			</div>
+			<div class="stats">
+				<div class="row">
+					<div class="col-6">
+						Event post<strong>{{site.data.events.size}}</strong>
+					</div>
+					<div class="col-6">
+						<a href="social-chat.html" class="btn btn-dark btn-sm btn-block">
+							<i class="icon ion-ios-mail"></i>
+							Message
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="divider mt-0 mb-2"></div>
+		</div>
+		<!-- * profile detail -->
+
+		<!-- posts -->
+		<div class="profilePost row">
+			{% for event in site.data.events %}
+				<div class="item col-6">
+					<a href="social-post.html">
+						<img src="{{event.img}}" alt="img" class="image img-fluid">
+					</a>
+				</div>
+			{% endfor %}
+		</div>
+		<!-- * posts -->
+	</div>
+
+	<!-- app Footer -->
+	<footer class="appFooter">
+		<div class="heading">Copyright © {{ site.title }} {{ site.copyright }}</div>
+		<!-- facebook -->
+		<a href="#" class="btn btn-facebook btn-icon mr-1">
+			<i class="icon ion-logo-facebook"></i>
+		</a>
+		<!-- twitter -->
+		<a href="#" class="btn btn-twitter btn-icon mr-1">
+			<i class="icon ion-logo-twitter"></i>
+		</a>
+		<!-- instagram -->
+		<a href="#" class="btn btn-instagram btn-icon mr-1">
+			<i class="icon ion-logo-instagram"></i>
+		</a>
+		<!-- yt -->
+		<a href="#" class="btn btn-youtube btn-icon mr-1">
+			<i class="icon ion-logo-youtube"></i>
+		</a>
+	</footer>
+	<!-- * app Footer -->
+
+
+</div>
+<!-- * appCapsule -->
+

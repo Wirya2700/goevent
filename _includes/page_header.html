@@ -12,7 +12,7 @@
 		</a>
 	</div>
 	<div class="pageTitle">
-		<strong>{{ site.title }}</strong>
+		{% if page.header %}{{ page.header }}{% else %}<strong>{{ site.title }}</strong>{% endif %}
 	</div>
 	<div class="right">
 		<label for="searchInput" class="mb-0 icon toggleSearchbox">
