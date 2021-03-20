@@ -1,0 +1,148 @@
+---
+layout: detail
+menu: home
+---
+
+<!-- App Capsule -->
+<div id="appCapsule">
+
+	<div class="appContent">
+{% for event in site.data.events %}
+	{% if event.key == 2 %}
+		<!-- title -->
+		<h1 class="title-lg mt-2 mb-2">
+			{{event.name}}
+		</h1>
+		<!-- * title -->
+
+		<!-- post header -->
+		<div class="postHeader mb-2">
+			<div>
+				{{event.time}}
+			</div>
+			<div>
+				{{event.date}}
+			</div>
+		</div>
+		<!-- * post header-->
+
+		<!-- post body -->
+		<div class="postBody">
+
+			<figure>
+				<img src="{{event.img}}" alt="image">
+			</figure>
+
+			<p>
+				{{event.description}}
+			</p>
+			<button type="button" class="btn btn-primary btn-large btn-block">
+				Ambil Tiket
+			</button>
+		</div>
+		<!-- * post body -->
+
+		<!-- author -->
+		<div class="postAuthor mt-3">
+			<img src="assets/img/avatar.jpg" alt="avatar" class="avatar">
+			<div>
+				<strong>Hanny Maria</strong>
+				<div class="text-muted">Mahasiswa</div>
+			</div>
+		</div>
+		<!-- * author -->
+
+		<!-- post buttons -->
+		<div class="row mt-2">
+			<div class="col-6">
+				<a href="javascript:;" class="btn btn-primary btn-block">
+					<i class="icon ion-md-share"></i> Share
+				</a>
+			</div>
+			<div class="col-6">
+				<a href="javascript:;" class="btn btn-danger btn-block">
+					<i class="icon ion-ios-heart"></i> {{event.like}}
+				</a>
+			</div>
+		</div>
+		<!-- * post buttons -->
+
+		<div class="divider mt-2 mb-4"></div>
+
+		<!-- comments -->
+		<div class="sectionTitle mb-2">
+			<div class="title">
+				<h1>Comments <small>(2)</small></h1>
+			</div>
+		</div>
+
+		<div class="comments">
+			<div class="item">
+				<div class="image">
+					<img src="assets/img/avatar2.jpg" alt="avatar" class="avatar">
+				</div>
+				<div class="content">
+					<strong>Yogi</strong>
+					<div class="text">
+						Acaranya bagus...
+					</div>
+					<footer>19 Mar 2021</footer>
+				</div>
+			</div>
+			<div class="item">
+				<div class="image">
+					<img src="assets/img/avatar4.jpg" alt="avatar" class="avatar">
+				</div>
+				<div class="content">
+					<strong>Dimas</strong>
+					<div class="text">
+						Speakers nya keren-keren
+					</div>
+					<footer>20 Mar 2021</footer>
+				</div>
+			</div>
+		</div>
+		<!-- * comments -->
+
+		<div class="divider mt-3 mb-3"></div>
+
+		<!-- form -->
+		<form>
+			<div class="form-group">
+				<textarea class="form-control" rows="4" placeholder="Write a comment..."></textarea>
+			</div>
+			<button type="button" class="btn btn-primary btn-large btn-block">
+				SEND
+			</button>
+		</form>
+		<!-- * form -->
+	{% endif %}
+{% endfor %}
+	</div>
+
+	<!-- app Footer -->
+	<footer class="appFooter">
+		<div class="heading">Copyright © {{ site.title }} {{ site.copyright }}</div>
+		<!-- facebook -->
+		<a href="#" class="btn btn-facebook btn-icon mr-1">
+			<i class="icon ion-logo-facebook"></i>
+		</a>
+		<!-- twitter -->
+		<a href="#" class="btn btn-twitter btn-icon mr-1">
+			<i class="icon ion-logo-twitter"></i>
+		</a>
+		<!-- instagram -->
+		<a href="#" class="btn btn-instagram btn-icon mr-1">
+			<i class="icon ion-logo-instagram"></i>
+		</a>
+		<!-- yt -->
+		<a href="#" class="btn btn-youtube btn-icon mr-1">
+			<i class="icon ion-logo-youtube"></i>
+		</a>
+	</footer>
+	<!-- * app Footer -->
+
+
+</div>
+<!-- * appCapsule -->
+

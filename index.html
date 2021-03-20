@@ -9,7 +9,7 @@ menu: home
 	<div class="appContent row">
 		{% for event in site.data.events %}
 			<div class="event mt-2 col-sm-12 col-md-6 col-lg-4 col-xl-2">
-				<a href="#" class="card text-white">
+				<a href="detail-{{event.key}}.html" class="card text-white">
 					<img src="{{event.img}}" class="card-img img-fluid" alt="image">
 				</a>
 				<div class="header row">

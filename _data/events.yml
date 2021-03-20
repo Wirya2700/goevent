@@ -5,6 +5,8 @@
   date: 04/04/2021
   time: 08:00 AM
   img: assets/img/sample1.jpg
+  key: 1
+  description: Melatih talenta-talenta terbaik untuk menjadi the next da'i dalam ekonomi syariah
 - name: Kajian International Women's Day
   like: 1.2K
   people: 100
@@ -12,6 +14,7 @@
   date: 13/03/2021
   time: 19:30 PM
   img: assets/img/sample2.jpg
+  key: 2
 - name: Pembukaan Karya Kreatif Indonesia 2021 "Eksotisme Lombok"
   like: 5K
   people: 1K
@@ -19,6 +22,7 @@
   date: 03/03/2021
   time: 08:25 - 10:10 PM
   img: assets/img/sample3.jpg
+  key: 3
 - name: Pelatihan Desain Grafis
   like: 2K
   people: 200
@@ -26,6 +30,7 @@
   date: 20/03/2021
   time: 09:00 AM
   img: assets/img/sample4.jpg
+  key: 4
 - name: Pendidikan Menengah Koperasi Nasional, Koperasi Pemuda Indonesia
   like: 1K
   people: 600
@@ -33,3 +38,4 @@
   date: 25/02/2021
   time: 10:00 - 12 AM
   img: assets/img/sample5.jpg
+  key: 5
