@@ -1,6 +1,6 @@
 <!-- App Bottom Menu -->
 <div class="appBottomMenu">
-	<div class="item {% if page.menu != "ticket" and page.menu != "notif"  %} active {%endif%}">
+	<div class="item {% if page.menu != "ticket" and page.menu != "notif" and page.menu != "eo"   %} active {%endif%}">
 		<a href="index.html">
 			<p>
 				<i class="icon ion-ios-home"></i>
@@ -16,8 +16,8 @@
 			</p>
 		</a>
 	</div>
-	<div class="item {% if page.menu == "ticket" %} active {%endif%}">
-		<a href="ticket.html">
+	<div class="item {% if page.menu == "eo" %} active {%endif%}">
+		<a href="eo.html">
 			<p>
 				<i class="icon ion-ios-create"></i>
 				<span>EO</span>

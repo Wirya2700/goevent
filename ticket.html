@@ -1,22 +1,37 @@
 ---
 layout: default
-menu: notif
+menu: ticket
 ---
 
 <!-- App Capsule -->
 <div id="appCapsule">
 
 	<div class="appContent">
-		{% for event in site.data.events %}
-			<div class="notification">
-				<span>.</span>
-				<img src="{{event.img}}"/>
-				<div class="description">
-					{{event.name}}
-				</div>
+		<div class="ticket">
+			<center><img src="assets/img/qr.jpg" class="mt-2" style="width:100px;height:100px;"/></center>
+			<hr>
+			<div>
+				Name<br>
+				<h5>Hanny Maria</h5>
 			</div>
-			<div class="divider mt-1"></div>
-		{% endfor %}
+			<div class="mt-2">
+				Event<br>
+				<h5>Training Da'i Ekonomi Syariah</h5>
+			</div>
+			<div class="row mt-2">
+				<div class="col-6">
+					Date<br>
+					<strong>04/04/2021, <br>08:00 AM</strong><br>
+					<a href="">add to calender</a>
+				</div>
+				<div class="col-6">
+					Location<br>
+					<strong>Zoom Meet</strong><br>
+					<a href="">link room</a>
+				</div>
+				
+			</div>
+		</div>
 	</div>
 
 	<!-- app Footer -->

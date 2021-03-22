@@ -1,0 +1,16 @@
+- name: Pelatihan Desain Grafis
+  like: 2K
+  people: 200
+  place: Zoom Meet
+  date: 20/03/2021
+  time: 09:00 AM
+  img: assets/img/sample4.jpg
+  key: 4
+- name: Pendidikan Menengah Koperasi Nasional, Koperasi Pemuda Indonesia
+  like: 1K
+  people: 600
+  place: Hotel Royal Kuningan Jakarta, Zoom Meet, Youtube
+  date: 25/02/2021
+  time: 10:00 - 12 AM
+  img: assets/img/sample5.jpg
+  key: 5

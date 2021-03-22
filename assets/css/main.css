@@ -2878,3 +2878,39 @@ figure figcaption {
 	max-height:300px!important;
 	min-height:300px!important;
 }
+
+.sertifikat{
+	border: 1px solid #bfbfbf;
+	
+}
+.sertifikat img{
+	min-height:109px;
+	max-height:109px;
+}
+
+.wishlist img{
+	min-height:109px;
+	max-height:109px;
+}
+
+.notification .description{
+	font-size:12px;
+	display:inline;
+	position:absolute;
+	padding-left:10px;
+	line-height:normal!important;
+}
+
+.notification{
+	padding-top:10px;
+}
+
+.notification img{
+	min-height:40px;
+	max-height:40px;
+}
+
+.notification span{
+	color:red;
+	font-size:50px;
+}

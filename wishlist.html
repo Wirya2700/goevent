@@ -1,22 +1,29 @@
 ---
 layout: default
-menu: notif
+menu: home
+header: Wishlist
 ---
 
 <!-- App Capsule -->
 <div id="appCapsule">
-
 	<div class="appContent">
-		{% for event in site.data.events %}
-			<div class="notification">
-				<span>.</span>
-				<img src="{{event.img}}"/>
-				<div class="description">
-					{{event.name}}
+		<!-- post list -->
+		<div class="row mt-2">
+			<!-- item -->
+			{% for event in site.data.wishlist %}
+				<div class="col-6 wishlist">
+					<a href="event-{{event.id}}.html" class="postItem">
+						<div class="imageWrapper">
+							<img src="{{event.img}}" alt="image" class="image">
+						</div>
+						<h6>{{event.name}}</h6>
+					</a>
 				</div>
-			</div>
-			<div class="divider mt-1"></div>
-		{% endfor %}
+			{% endfor %}
+			
+			<!-- * item -->
+		</div>
+		<!-- * post list -->
 	</div>
 
 	<!-- app Footer -->
